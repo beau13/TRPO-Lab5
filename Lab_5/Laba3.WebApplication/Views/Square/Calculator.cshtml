@@ -1,0 +1,30 @@
+﻿@model Laba3.WebApplication.Models.CyclinderModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Square Calculator</title>
+</head>
+<body>
+    <h1>Калькулятор расчета площади</h1>
+    <form method="post" action="/Square/Calculator">
+        <label for="smallRadius">Введите радиус вращения цилиндра:</label>
+        <input type="number" step="any" name="Radius" /><br />
+
+        <label for="largeRadius">Введите высоту цилиндра:</label>
+        <input type="number" step="any" name="Height" /><br />
+
+
+        <input type="submit" value="Калькулятор" />
+    </form>
+
+
+    @if (Model.Radius >= 0 && Model.Height >= 0)
+    {
+            <p>Полученная площадь поверхности цилиндра @Model.Cyclinder</p>
+    }
+
+    <img src="/cyclinder.png" width="250" height="250" />
+
+</body>
+</html>

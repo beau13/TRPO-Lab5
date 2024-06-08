@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Window1\image.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Laba3.ClassLibrary\Laba3.ClassLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Window1\image.png" />
+  </ItemGroup>
+
+</Project>
